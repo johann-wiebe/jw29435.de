@@ -1,6 +1,6 @@
 <head>
     <!-- Global site tag (first including gtag.js) for Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1F5GCWHXKX"></script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-1F5GCWHXKX"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -16,6 +16,8 @@
         });
     </script>
 
+    <script src="https://www.google.com/recaptcha/api.js?render=6Ld9QSYaAAAAANgmfvUZkMD8PameSDCr_x3VFa6x"></script>
+
     <!-- Required meta tags for charset and mobile optimisation -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,8 +25,8 @@
     <!-- the stylesheet as a file import because it loads faster -->
     <link rel="stylesheet" href="<?php if (isset($site_name)) {
         echo "../";
-    } ?>assets/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    } ?>assets/css/materialize.min.css" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" media="print" onload="this.media='all'">
 
 
     <!-- include the latest jQuery and the materialize.min.js -->
@@ -32,11 +34,11 @@
     <script src="<?php if (isset($site_name)) {
         echo "../";
     } ?>assets/js/materialize.min.js"></script>
-    <script>M.AutoInit();</script>
+    <script>M.AutoInit(document.body)</script>
 
 
     <!-- specific site info-->
-    <title>JW 29435<?php
+    <title>JW29435<?php
         if (isset($site_name)) {
             echo " | " . $site_name;
         } ?></title>
@@ -70,7 +72,7 @@
     # log the date, URL, IP, Browser (this is a php comment so the user doesn't see it)
     $file = "/var/www/log/ip.log";
     $file = fopen($file, "a");
-    $data = "[" . date('d/m/Y G:i:s') . "] " . "(" . $_SERVER['PATH_INFO'] . ") " . "user address: [" . $_SERVER['REMOTE_ADDR'] . "] " . "User Browser info: [" . $_SERVER['HTTP_USER_AGENT'] . "]" . PHP_EOL;
+    $data = "[" . date('d/m/Y G:i:s') . "] " . "user address: [" . $_SERVER['REMOTE_ADDR'] . "] " . "User Browser info: [" . $_SERVER['HTTP_USER_AGENT'] . "]" . PHP_EOL;
     fwrite($file, $data);
     fclose($file);
     ?>
