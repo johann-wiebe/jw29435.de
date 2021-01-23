@@ -12,5 +12,4 @@ $mail_message = "A " . $first_name . " " . $last_name . " has a message. \n\n " 
 mail($to, $subject, $mail_message, "From: $email");
 $msg = "The message was send successfully.";
 }
-header("location:../../index.php");
 exit();

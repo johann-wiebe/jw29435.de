@@ -25,8 +25,8 @@
     <!-- the stylesheet as a file import because it loads faster -->
     <link rel="stylesheet" href="<?php if (isset($site_name)) {
         echo "../";
-    } ?>assets/css/materialize.min.css" media="print" onload="this.media='all'">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" media="print" onload="this.media='all'">
+    } ?>assets/css/materialize.min.css" media="all">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
     <!-- include the latest jQuery and the materialize.min.js -->

@@ -1,1 +1,8 @@
-https://jw29435.de/assets/
+# start of file
+user-agent: *
+disallow: /assets/
+
+user-agent: Googlebot-Image
+allow: /assets/img/
+
+sitemap: https://jw29435.de/sitemap.xml

@@ -7,19 +7,19 @@ include("./assets/php/head.php"); ?>
 <body>
 
 <header>
-    <nav>
+    <nav class="blue-grey darken-3">
         <div class="nav-wrapper container">
-            <a rel="nofollow" href="https://jw29435.de" class="brand-logo"><img src="assets/img/29435-logo.png" alt="29435-logo" height="40" width="82"></a>
+            <a rel="nofollow" href="https://jw29435.de" class="brand-logo"><img src="assets/img/29435-logo.png" class="responsive-img" alt="29435-logo"></a>
             <a href="#" data-target="mobile-sidebar" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a class="waves-effect" href="https://jw29435.de/apps">Event Planner</a></li>
-                <li><a class="waves-effect" href="#">Services</a></li>
-                <li><a class="waves-effect" href="#">Team</a></li>
+                <li><a class="waves-effect" href="https://jw29435.de/services">Services</a></li>
+                <li><a class="waves-effect" href="https://jw29435.de/team">Team</a></li>
             </ul>
             <ul class="sidenav" id="mobile-sidebar">
                 <li><a class="waves-effect" href="https://jw29435.de/apps">Event Planner</a></li>
-                <li><a class="waves-effect" href="#">Services</a></li>
-                <li><a class="waves-effect" href="#">Team</a></li>
+                <li><a class="waves-effect" href="https://jw29435.de/services">Services</a></li>
+                <li><a class="waves-effect" href="https://jw29435.de/team">Team</a></li>
             </ul>
         </div>
     </nav>
@@ -39,6 +39,12 @@ include("./assets/php/head.php"); ?>
             </div>
             <div id="app" class="section scrollspy">
                 <h2>App</h2>
+                <div class="carousel no-autoinit">
+                    <a class="carousel-item" href="#one!"><img src="https://jw29435.de/assets/img/app/1"></a>
+                    <a class="carousel-item" href="#two!"><img src="https://jw29435.de/assets/img/app/2"></a>
+                    <a class="carousel-item" href="#three!"><img src="https://jw29435.de/assets/img/app/3"></a>
+                    <a class="carousel-item" href="#four!"><img src="https://jw29435.de/assets/img/app/4"></a>
+                </div>
                 <p>
                     Even though the app is only available on android right now, an iOS version is already in development
                     and will follow as soon as it's finished.
@@ -52,10 +58,77 @@ include("./assets/php/head.php"); ?>
                     Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
             </div>
 
-            <?php
-            include("./assets/php/contact_form.php");
-            ?>
+            <div id="contact" class="section scrollspy">
+                <form method="post" name="Contact_Form" id="contact_form" autocomplete="on" autocapitalize="none">
+                    <table>
+                        <thead>
+                        <h3 id="headline">Contact Me</h3>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <label for="first_name">First Name</label>
+                                <input name="first_name" type="text" class="Input" required>
+                            </td>
+                            <td>
+                                <label for="last_name">Last Name</label>
+                                <input name="last_name" type="text" class="Input" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="email">E-Mail</label>
+                                <input name="email" type="email" class="Input" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="subject">Subject</label>
+                                <input name="subject" id="subject" type="text" class="Input" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" class="materialize-textarea" required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="g-recaptcha waves-effect waves-light btn" type="submit" data-sitekey="6Ld9QSYaAAAAANgmfvUZkMD8PameSDCr_x3VFa6x" data-callback='onSubmit' data-action='submit' onclick="onClick(e)">
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <script>
+                        function onClick(e) {
+                            e.preventDefault();
+                            grecaptcha.ready(function () {
+                                grecaptcha.execute('6Ld9QSYaAAAAANgmfvUZkMD8PameSDCr_x3VFa6x', {action: 'submit'}).then(function (token) {
+                                    <?php
+                                    if (isset($_POST['submit'])) {
+                                        $last_name = isset($_POST['last_name']) ? $_POST['last_name'] : null;
+                                        $first_name = isset($_POST['first_name']) ? $_POST['first_name'] : null;
+                                        $email = isset($_POST['email']) ? $_POST['email'] : null;
+                                        $subject = isset($_POST['subject']) ? $_POST['subject'] : null;
+                                        $message = isset($_POST['message']) ? $_POST['message'] : null;
 
+                                        $to = "contactform@jw29435.de";
+                                        $mail_message = "A " . $first_name . " " . $last_name . " has a message. \n\n " . $message;
+                                        if (mail($to, $subject, $mail_message, "From: $email")) {
+                                            echo "<script> M.toast({html: 'The message was send successful.'}) </script>";
+                                        } else {
+                                            echo "<script> M.toast({html: 'The message wasn\'t send successful.'}) </script>";
+                                            echo "<script> M.toast({html: " . error_get_last() . "})</script>";
+                                        }
+                                    }
+                                    ?>
+                                });
+                            });
+                        }
+                    </script>
+                </form>
+            </div>
 
             <div id="projects" class="section scrollspy">
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
@@ -85,13 +158,22 @@ include("./assets/php/head.php"); ?>
     $(window).scroll(function () {
         let scroll = $(window).scrollTop();
         let toc = $(".toc-wrapper");
-        if (scroll >= 50) {
+        if (scroll >= 63) {
             toc.removeClass("pin-top");
             toc.addClass("pinned");
         } else {
             toc.removeClass("pinned");
             toc.addClass("pin-top");
         }
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        let elements = document.querySelectorAll('.carousel');
+        let instances = M.Carousel.init(elements, {
+            numVisible: 4;
+            indicators: true;
+            noWrap: true;
+        };
     });
 </script>
 

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="https://www.jw29435.de">
+
+	<url>
+		<loc>https://www.jw29435.de/index.php</loc>
+		<lastmod>2021-01-22</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	
+	<url>
+		<loc>https://www.jw29435.de/apps/index.php</loc>
+		<lastmod>2021-01-22</lastmod>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>https://www.jw29435.de/dsgvo/index.php</loc>
+		<lastmod>2021-01-22</lastmod>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>https://www.jw29435.de/impressum/index.php</loc>
+		<lastmod>2021-01-22</lastmod>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>https://www.jw29435.de/services/index.php</loc>
+		<lastmod>2021-01-22</lastmod>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+	<url>
+		<loc>https://www.jw29435.de/team/index.php</loc>
+		<lastmod>2021-01-22</lastmod>
+		<changefreq>weekly</changefreq>
+	</url>
+	
+</urlset>
