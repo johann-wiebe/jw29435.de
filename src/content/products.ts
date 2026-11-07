@@ -40,8 +40,8 @@ export const products: Product[] = [
       "Dateien auf der eigenen Synology durchsuchen und Musikordner direkt abspielen, im LAN, per VPN oder über HTTPS.",
     action: {
       kind: "outline",
-      label: "APK auf GitHub",
-      href: "https://github.com/johann-wiebe/synology-explorer/releases",
+      label: "Zum Play-Test",
+      href: "https://play.google.com/apps/testing/de.jw29435.nuvo_explorer",
     },
     status: { label: "Alpha", tone: "amber" },
   },

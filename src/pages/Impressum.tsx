@@ -5,6 +5,7 @@ export function Impressum() {
   return (
     <article className="prose container">
       <h1>Impressum</h1>
+      <p>Dieses Impressum gilt für die Websites jw29435.de und johannwiebe.de.</p>
 
       <h2>Angaben gemäß § 5 DDG</h2>
       <Address />

@@ -22,8 +22,8 @@ export function Datenschutz() {
 
       <h2>Keine Cookies, keine Tracker</h2>
       <p>
-        Beide Websites setzen keine Cookies, verwenden kein Analytics und keine Tracker und binden
-        keine Inhalte von Drittanbietern ein. Die Schriften werden zusammen mit der Seite
+        Beide Websites setzen selbst keine Cookies, verwenden kein Analytics und keine Tracker und
+        binden keine Inhalte von Drittanbietern ein. Die Schriften werden zusammen mit der Seite
         ausgeliefert; dein Browser baut dafür keine Verbindung zu Google Fonts oder anderen Diensten
         auf.
       </p>
@@ -35,7 +35,9 @@ export function Datenschutz() {
         Daten und speichert sie in Server-Logs: deine IP-Adresse, Datum und Uhrzeit, die aufgerufene
         Adresse und die Browserkennung. Das dient der Auslieferung der Seite und ihrer Sicherheit.
         Grundlage ist das berechtigte Interesse an einer sicheren und verfügbaren Website (Art. 6
-        Abs. 1 lit. f DSGVO). GitHub ist unter dem EU-US Data Privacy Framework zertifiziert. Weitere
+        Abs. 1 lit. f DSGVO). Auf diese Logs habe ich keinen Zugriff; wie lange sie aufbewahrt
+        werden, legt GitHub fest, und zwar so lange, wie es für Sicherheit und Betrieb des Dienstes
+        nötig ist. GitHub ist unter dem EU-US Data Privacy Framework zertifiziert. Weitere
         Informationen:{" "}
         <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">
           Datenschutzerklärung von GitHub
@@ -47,8 +49,11 @@ export function Datenschutz() {
       <p>
         johannwiebe.de wird über das Netzwerk von Cloudflare ausgeliefert (Cloudflare, Inc., 101
         Townsend St., San Francisco, CA 94107, USA). Cloudflare leitet die Anfragen an meinen eigenen
-        Server weiter, schützt vor Angriffen und verarbeitet dabei die Verbindungsdaten. Cloudflare
-        ist unter dem EU-US Data Privacy Framework zertifiziert. Weitere Informationen:{" "}
+        Server weiter, schützt vor Angriffen und verarbeitet dabei die Verbindungsdaten. Zum Schutz
+        vor automatisierten Zugriffen kann Cloudflare ein technisch notwendiges Cookie setzen (zum
+        Beispiel „__cf_bm“). Grundlage ist das berechtigte Interesse an einer sicheren und
+        verfügbaren Website (Art. 6 Abs. 1 lit. f DSGVO). Cloudflare ist unter dem EU-US Data Privacy
+        Framework zertifiziert. Weitere Informationen:{" "}
         <a href="https://www.cloudflare.com/de-de/privacypolicy/">Datenschutzerklärung von Cloudflare</a>
         .
       </p>
@@ -63,8 +68,12 @@ export function Datenschutz() {
       <p>
         Wenn du mir eine E-Mail schreibst, verarbeite ich deine Adresse und den Inhalt, um zu
         antworten (Art. 6 Abs. 1 lit. b bzw. f DSGVO). E-Mails an diese Domains werden über
-        Cloudflare Email Routing an mein Postfach weitergeleitet. Ich lösche die Nachrichten, wenn
-        sie erledigt sind und keine Aufbewahrungspflicht besteht.
+        Cloudflare Email Routing an mein Postfach bei Gmail weitergeleitet (Google Ireland Limited,
+        Gordon House, Barrow Street, Dublin 4, Irland). Google speichert die Nachrichten in meinem
+        Postfach; dabei können Daten auch in die USA übermittelt werden. Google ist unter dem EU-US
+        Data Privacy Framework zertifiziert. Weitere Informationen:{" "}
+        <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von Google</a>. Ich
+        lösche die Nachrichten, wenn sie erledigt sind und keine Aufbewahrungspflicht besteht.
       </p>
 
       <h2>Deine Rechte</h2>
