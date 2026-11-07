@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jw29435.de/sitemap.xml
