@@ -51,7 +51,11 @@ export const products: Product[] = [
     platform: "Android",
     description:
       "Macht aus einem Foto eine Malen-nach-Zahlen-Vorlage, auf Wunsch nur mit den Farben, die in deinem Tuschkasten stecken.",
-    action: { kind: "disabled", label: "Play Store folgt" },
-    status: { label: "Alpha", tone: "amber" },
+    action: {
+      kind: "primary",
+      label: "Im Play Store",
+      href: "https://play.google.com/store/apps/details?id=de.jw29435.clr_by_nmbrs.clr_by_nmbrs",
+    },
+    status: { label: "Verfügbar", tone: "success" },
   },
 ];
