@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { openConsentSettings } from "../analytics";
 import { BrandImage } from "./BrandImage";
 
 export function Footer() {
@@ -17,6 +18,11 @@ export function Footer() {
           </li>
           <li>
             <Link to="/datenschutz">Datenschutz</Link>
+          </li>
+          <li>
+            <button type="button" onClick={openConsentSettings}>
+              Cookie-Einstellungen
+            </button>
           </li>
           <li>
             {/* Beim Vorrendern steht das Baujahr drin; im Browser zählt das aktuelle Jahr. */}

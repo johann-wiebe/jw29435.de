@@ -20,12 +20,38 @@ export function Datenschutz() {
         E-Mail: <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
       </p>
 
-      <h2>Keine Cookies, keine Tracker</h2>
+      <h2>Cookies und Analyse</h2>
       <p>
-        Beide Websites setzen selbst keine Cookies, verwenden kein Analytics und keine Tracker und
-        binden keine Inhalte von Drittanbietern ein. Die Schriften werden zusammen mit der Seite
-        ausgeliefert; dein Browser baut dafür keine Verbindung zu Google Fonts oder anderen Diensten
-        auf.
+        Ohne deine Einwilligung setzen beide Websites selbst keine Cookies, verwenden kein Analytics
+        und keine Tracker und binden keine Inhalte von Drittanbietern ein. Die Schriften werden
+        zusammen mit der Seite ausgeliefert; dein Browser baut dafür keine Verbindung zu Google Fonts
+        oder anderen Diensten auf. Auf jw29435.de kannst du Google Analytics zulassen (siehe unten).
+      </p>
+
+      <h2>jw29435.de: Google Analytics mit Einwilligung</h2>
+      <p>
+        Wenn du im Banner auf „Zulassen“ klickst, nutzt jw29435.de Google Analytics 4, einen
+        Webanalysedienst der Google Ireland Limited (Gordon House, Barrow Street, Dublin 4, Irland).
+        Damit sehe ich in zusammengefasster Form, welche Seiten wie oft aufgerufen werden, woher die
+        Besuche kommen und mit welchen Geräten und Browsern. Vorher wird Google Analytics nicht
+        geladen.
+      </p>
+      <p>
+        Google Analytics speichert dafür Cookies in deinem Browser („_ga“ und „_ga_1F5GCWHXKX“, bis
+        zu zwei Jahre) und verarbeitet Nutzungsdaten wie aufgerufene Seiten, Zeitpunkt, Referrer,
+        ungefähren Standort, Gerät und Browser. Google Analytics 4 speichert keine IP-Adressen.
+        Google Signals und personalisierte Werbung sind ausgeschaltet. Dabei können Daten auch an
+        Google LLC in den USA übermittelt werden; Google ist unter dem EU-US Data Privacy Framework
+        zertifiziert.
+      </p>
+      <p>
+        Grundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG). Du kannst
+        sie jederzeit mit Wirkung für die Zukunft widerrufen: Klicke im Footer auf
+        „Cookie-Einstellungen“ und dann auf „Ablehnen“. Die Cookies von Google Analytics werden dabei
+        gelöscht. Deine Wahl selbst speichert die Seite im lokalen Speicher deines Browsers
+        („analytics-consent“), damit der Banner nicht bei jedem Besuch erscheint; dafür ist keine
+        Einwilligung nötig (§ 25 Abs. 2 Nr. 2 TDDDG). Weitere Informationen:{" "}
+        <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von Google</a>.
       </p>
 
       <h2>jw29435.de: Hosting bei GitHub Pages</h2>

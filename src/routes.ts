@@ -11,7 +11,7 @@ export type PageMeta = {
 };
 
 const description =
-  "Kleine Werkzeuge für echte Abläufe: Serva, Nuvo Explorer und CLR by NMBRS von Johann Wiebe. Ohne Tracker.";
+  "Kleine Werkzeuge für echte Abläufe: Serva, Nuvo Explorer und CLR by NMBRS von Johann Wiebe.";
 
 export const pages = {
   home: { path: "/", file: "index.html", title: "jw29435", description, canonical: "/" },
@@ -27,7 +27,7 @@ export const pages = {
     file: "datenschutz/index.html",
     title: "Datenschutz – jw29435",
     description:
-      "Datenschutzerklärung für jw29435.de und johannwiebe.de: keine Cookies, keine Tracker, nur Server-Logs.",
+      "Datenschutzerklärung für jw29435.de und johannwiebe.de: Server-Logs und Google Analytics nur mit Einwilligung.",
     canonical: "/datenschutz/",
   },
   notFound: {

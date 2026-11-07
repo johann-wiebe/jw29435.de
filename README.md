@@ -2,7 +2,8 @@
 
 Dachseite der jw29435-Produkte Serva, Nuvo Explorer und CLR by NMBRS, mit Impressum und
 Datenschutzerklärung (auch für johannwiebe.de). Vite + React + TypeScript, statisch gebaut und
-auf GitHub Pages ausgeliefert. Keine Tracker, keine Cookies, keine externen Requests.
+auf GitHub Pages ausgeliefert. Google Analytics lädt nur nach Einwilligung im Banner; sonst
+keine Cookies und keine externen Requests.
 
 ## Entwickeln
 
@@ -18,6 +19,8 @@ npm run preview
 
 - `src/content/products.ts` – Texte, Links und Status der Produktkarten. Änderungen hier brauchen kein Layout-Update.
 - `src/content/site.ts` – Kontaktadresse und Domain.
+- `src/analytics.ts` – Einwilligung (localStorage) und Laden von Google Analytics; der Banner steht in
+  `src/components/ConsentBanner.tsx`, „Cookie-Einstellungen“ im Footer öffnet ihn wieder.
 - `src/routes.ts` – Seiten (Titel, Beschreibung, Ausgabedatei) und Weiterleitungen der alten PHP-Pfade.
 - `src/styles/tokens.css` – Farben, Radien, Abstände; hell und dunkel über `prefers-color-scheme`.
 - `public/brand/` – Logo, Marke und App-Icons als SVG und PNG.
