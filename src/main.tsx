@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot, hydrateRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router";
+import { loadAnalytics, readConsent } from "./analytics";
 import { App } from "./App";
 import "./styles/fonts";
 import "./styles/tokens.css";
@@ -21,3 +22,5 @@ if (container.firstElementChild) {
 } else {
   createRoot(container).render(app);
 }
+
+if (readConsent() === "granted") loadAnalytics();

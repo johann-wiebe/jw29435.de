@@ -15,8 +15,7 @@ export function Home() {
           </h1>
           <p className="hero__lead">
             Drei Produkte von Johann Wiebe: eins plant Gottesdienste, eins öffnet die eigene
-            Synology unterwegs, eins macht aus Fotos Malvorlagen. Alle sehen gleich aus und kommen
-            ohne Tracker aus.
+            Synology unterwegs, eins macht aus Fotos Malvorlagen. Alle sehen gleich aus.
           </p>
         </div>
         <BrandImage
