@@ -34,7 +34,7 @@ export const products: Product[] = [
   },
   {
     name: "Nuvo Explorer",
-    icon: "/brand/icon-nuvo.svg",
+    icon: "/brand/icon-nuvo.png",
     platform: "Android · iOS geplant",
     description:
       "Dateien auf der eigenen Synology durchsuchen und Musikordner direkt abspielen, im LAN, per VPN oder über HTTPS.",
