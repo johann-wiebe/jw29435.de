@@ -47,7 +47,7 @@ export const products: Product[] = [
   },
   {
     name: "CLR by NMBRS",
-    icon: "/brand/icon-clr.svg",
+    icon: "/brand/icon-clr.png",
     platform: "Android",
     description:
       "Macht aus einem Foto eine Malen-nach-Zahlen-Vorlage, auf Wunsch nur mit den Farben, die in deinem Tuschkasten stecken.",

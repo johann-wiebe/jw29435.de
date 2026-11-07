@@ -256,6 +256,8 @@ main:focus {
   width: 64px;
   height: 64px;
   margin-bottom: 16px;
+  /* entspricht dem Eckradius der Familien-SVGs (rx 225/1024); eigene PNG-Icons wie CLR bekommen so dieselbe Form */
+  border-radius: 14px;
 }
 
 .product-card__name {
