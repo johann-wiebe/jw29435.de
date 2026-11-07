@@ -1,0 +1,68 @@
+/* jw29435-Tokens. Hell ist Standard, dunkel folgt prefers-color-scheme (kein Umschalter). */
+:root {
+  color-scheme: light dark;
+
+  --paper: #faf7f2;
+  --surface: #ffffff;
+  --surface-raised: #f1ece4;
+  --line: #e6e1d8;
+  --line-strong: #8a8083;
+  --ink: #231f20;
+  --ink-muted: #6b6264;
+  --ink-soft: #4a4345;
+
+  /* Amber nur als Fläche; Text und Icons darauf immer on-amber, nie Weiß */
+  --amber: #e8a020;
+  --on-amber: #231f20;
+  /* Amber als Text oder Icon auf neutralem Grund */
+  --amber-text: #8f5a00;
+
+  /* Status immer mit Wort oder Icon, nie nur über die Farbe */
+  --success: #2b7a24;
+  --warning: #a63d00;
+  --danger: #b3261e;
+
+  --focus: #231f20;
+  --focus-width: 2px;
+
+  --radius-chip: 6px;
+  --radius-control: 14px;
+  --radius-card: 16px;
+  --radius-sheet: 20px;
+
+  --tap-min: 44px;
+
+  --content-max: 1120px;
+  --gutter: 16px;
+  --measure: 65ch;
+
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@media (min-width: 960px) {
+  :root {
+    --gutter: 32px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #161314;
+    --surface: #211d1e;
+    --surface-raised: #2a2526;
+    --line: #3a3436;
+    --line-strong: #8f8588;
+    --ink: #f3eeea;
+    --ink-muted: #a39a9c;
+    --ink-soft: #d6cfcb;
+
+    --amber-text: #f2b850;
+
+    --success: #7fd975;
+    --warning: #ff9f6b;
+    --danger: #ff8a7a;
+
+    --focus: #f3eeea;
+  }
+}
