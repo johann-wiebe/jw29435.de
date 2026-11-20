@@ -12,7 +12,7 @@ export function TranslationNotice({ page }: { page: PageKey }) {
   return (
     <p className="translation-notice" role="note">
       {t.legalNotice.text}{" "}
-      <a href={pathFor(defaultLanguage, page)} hrefLang={defaultLanguage.hreflang} lang={defaultLanguage.lang}>
+      <a href={pathFor(defaultLanguage, page)} hrefLang={defaultLanguage.hreflang}>
         {t.legalNotice.link}
       </a>
     </p>
