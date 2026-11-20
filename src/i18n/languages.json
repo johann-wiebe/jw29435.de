@@ -16,7 +16,7 @@
   { "code": "lt", "endonym": "Lietuvių", "lang": "lt", "hreflang": "lt", "ogLocale": "lt_LT", "playHl": "lt" },
   { "code": "hu", "endonym": "Magyar", "lang": "hu", "hreflang": "hu", "ogLocale": "hu_HU", "playHl": "hu" },
   { "code": "nl", "endonym": "Nederlands", "lang": "nl", "hreflang": "nl", "ogLocale": "nl_NL", "playHl": "nl" },
-  { "code": "nb", "endonym": "Norsk bokmål", "lang": "nb", "hreflang": "nb", "ogLocale": "nb_NO", "playHl": "nb", "aliases": ["no", "nn"] },
+  { "code": "nb", "endonym": "Norsk bokmål", "lang": "nb", "hreflang": "nb", "ogLocale": "nb_NO", "playHl": "no", "aliases": ["no", "nn"] },
   { "code": "pl", "endonym": "Polski", "lang": "pl", "hreflang": "pl", "ogLocale": "pl_PL", "playHl": "pl" },
   { "code": "pt", "endonym": "Português", "lang": "pt-PT", "hreflang": "pt-PT", "ogLocale": "pt_PT", "playHl": "pt-PT" },
   { "code": "ro", "endonym": "Română", "lang": "ro", "hreflang": "ro", "ogLocale": "ro_RO", "playHl": "ro" },
