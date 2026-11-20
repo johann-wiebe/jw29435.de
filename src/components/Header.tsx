@@ -1,24 +1,28 @@
 import { Link, useLocation } from "react-router";
+import { pathFor } from "../i18n/paths";
+import { useI18n } from "../i18n/useI18n";
 import { BrandImage } from "./BrandImage";
-
-const nav = [
-  { label: "Produkte", to: "/#produkte" },
-  { label: "Kontakt", to: "/#kontakt" },
-  { label: "Impressum", to: "/impressum" },
-];
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Header() {
-  // GitHub Pages leitet /impressum auf /impressum/ um
-  const pathname = useLocation().pathname.replace(/(.)\/$/, "$1");
+  const { t, language } = useI18n();
+  // GitHub Pages leitet /impressum auf /impressum/ um; verglichen wird immer mit Schrägstrich.
+  const pathname = useLocation().pathname.replace(/\/?$/, "/");
+  const home = pathFor(language, "home");
+  const nav = [
+    { label: t.layout.navProducts, to: `${home}#produkte` },
+    { label: t.layout.navContact, to: `${home}#kontakt` },
+    { label: t.layout.navImpressum, to: pathFor(language, "impressum") },
+  ];
 
   return (
     <header className="site-header">
       <div className="container site-header__inner">
-        <Link to="/" className="brand" aria-label="jw29435 – Startseite">
+        <Link to={home} className="brand" aria-label={t.layout.homeLink}>
           <BrandImage name="jw-mark" alt="" width={41} height={30} eager />
           <span className="brand__word">jw29435</span>
         </Link>
-        <nav aria-label="Hauptnavigation">
+        <nav aria-label={t.layout.mainNav}>
           <ul className="site-nav">
             {nav.map((item) => (
               <li key={item.to}>
@@ -33,6 +37,7 @@ export function Header() {
             ))}
           </ul>
         </nav>
+        <LanguageSwitcher />
       </div>
     </header>
   );

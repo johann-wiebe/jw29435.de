@@ -1,18 +1,25 @@
 import { Address } from "../components/Address";
+import { TranslationNotice } from "../components/TranslationNotice";
 import { contactEmail } from "../content/site";
+import { Rich } from "../i18n/Rich";
+import { useI18n } from "../i18n/useI18n";
 
 export function Impressum() {
+  const { t } = useI18n();
+  const text = t.impressum;
+
   return (
     <article className="prose container">
-      <h1>Impressum</h1>
-      <p>Dieses Impressum gilt für die Websites jw29435.de und johannwiebe.de.</p>
+      <TranslationNotice page="impressum" />
+      <h1>{text.title}</h1>
+      <p>{text.intro}</p>
 
-      <h2>Angaben gemäß § 5 DDG</h2>
+      <h2>{text.providerHeading}</h2>
       <Address />
 
-      <h2>Kontakt</h2>
+      <h2>{text.contactHeading}</h2>
       <p>
-        E-Mail: <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
+        <Rich text={text.email} vars={{ email: <a href={`mailto:${contactEmail}`}>{contactEmail}</a> }} />
       </p>
     </article>
   );
