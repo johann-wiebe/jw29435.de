@@ -1,27 +1,32 @@
 import { Link } from "react-router";
 import { openConsentSettings } from "../analytics";
+import { pathFor } from "../i18n/paths";
+import { Rich } from "../i18n/Rich";
+import { useI18n } from "../i18n/useI18n";
 import { BrandImage } from "./BrandImage";
 
 export function Footer() {
+  const { t, language } = useI18n();
+
   return (
     <footer className="site-footer">
       <div className="container site-footer__inner">
         <p className="site-footer__by">
           <BrandImage name="jw-mark" alt="" width={30} height={22} />
           <span>
-            Ein Produkt von <strong>jw29435</strong>
+            <Rich text={t.layout.footerBy} />
           </span>
         </p>
         <ul className="site-footer__links">
           <li>
-            <Link to="/impressum">Impressum</Link>
+            <Link to={pathFor(language, "impressum")}>{t.layout.footerImpressum}</Link>
           </li>
           <li>
-            <Link to="/datenschutz">Datenschutz</Link>
+            <Link to={pathFor(language, "datenschutz")}>{t.layout.footerDatenschutz}</Link>
           </li>
           <li>
             <button type="button" onClick={openConsentSettings}>
-              Cookie-Einstellungen
+              {t.layout.cookieSettings}
             </button>
           </li>
           <li>

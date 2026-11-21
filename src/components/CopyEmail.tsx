@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
+import { useI18n } from "../i18n/useI18n";
 
 export function CopyEmail({ email }: { email: string }) {
+  const { t } = useI18n();
   const [copied, setCopied] = useState(false);
   const textRef = useRef<HTMLSpanElement>(null);
 
@@ -33,7 +35,7 @@ export function CopyEmail({ email }: { email: string }) {
         {email}
       </span>
       <button type="button" className="button button--outline copy-email__button" onClick={copy}>
-        <span aria-live="polite">{copied ? "Kopiert" : "Kopieren"}</span>
+        <span aria-live="polite">{copied ? t.home.copied : t.home.copy}</span>
       </button>
     </div>
   );

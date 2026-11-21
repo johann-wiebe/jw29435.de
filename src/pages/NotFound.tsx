@@ -1,5 +1,7 @@
 import { Link } from "react-router";
 
+// Bewusst nur deutsch: GitHub Pages liefert für jeden unbekannten Pfad (auch /en/…) dieselbe
+// 404.html. Der Sprachumschalter im Kopf führt zu den Startseiten aller Sprachen.
 export function NotFound() {
   return (
     <article className="prose container">

@@ -1,8 +1,10 @@
 import { useEffect, useRef, useSyncExternalStore } from "react";
-import { Link } from "react-router";
 import { getBannerState, readConsent, saveConsent, subscribeBanner } from "../analytics";
+import { Rich } from "../i18n/Rich";
+import { useI18n } from "../i18n/useI18n";
 
 export function ConsentBanner() {
+  const { t } = useI18n();
   // Beim Vorrendern ist die Wahl unbekannt; der Banner erscheint erst im Browser.
   const state = useSyncExternalStore(subscribeBanner, getBannerState, () => "hidden" as const);
   const firstButtonRef = useRef<HTMLButtonElement>(null);
@@ -19,17 +21,14 @@ export function ConsentBanner() {
     <section className="consent" aria-labelledby="consent-title">
       <div className="consent__inner">
         <h2 id="consent-title" className="consent__title">
-          Darf ich messen, wie die Seite genutzt wird?
+          {t.consent.title}
         </h2>
         <p className="consent__text">
-          Mit deiner Einwilligung nutze ich Google Analytics, um zu sehen, welche Seiten aufgerufen
-          werden. Dabei setzt Google Cookies und überträgt Daten auch in die USA. Du kannst die
-          Wahl jederzeit über „Cookie-Einstellungen“ im Footer ändern. Mehr dazu in der{" "}
-          <Link to="/datenschutz">Datenschutzerklärung</Link>.
+          <Rich text={t.consent.text} />
         </p>
         {current && (
           <p className="consent__current">
-            Aktuell: {current === "granted" ? "zugelassen" : "abgelehnt"}
+            {current === "granted" ? t.consent.currentGranted : t.consent.currentDenied}
           </p>
         )}
         <div className="consent__actions">
@@ -39,14 +38,14 @@ export function ConsentBanner() {
             className="button button--outline"
             onClick={() => saveConsent("denied")}
           >
-            Ablehnen
+            {t.consent.deny}
           </button>
           <button
             type="button"
             className="button button--outline"
             onClick={() => saveConsent("granted")}
           >
-            Zulassen
+            {t.consent.allow}
           </button>
         </div>
       </div>

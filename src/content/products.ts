@@ -1,61 +1,47 @@
-// Inhalte der Produktkarten auf der Startseite. Reihenfolge hier = Reihenfolge auf der Seite.
+// Produktkarten auf der Startseite. Reihenfolge hier = Reihenfolge auf der Seite.
+// Die Texte (Plattform, Beschreibung, Knopf, Status) stehen je Sprache unter `products.<id>`
+// in src/i18n/locales/<code>.ts.
 
-export type ProductAction =
-  | { kind: "primary" | "outline"; label: string; href: string }
-  | { kind: "disabled"; label: string };
-
-export type ProductStatus = {
-  label: string;
-  tone: "success" | "amber" | "warning" | "danger";
-};
+export type ProductId = "serva" | "nuvo" | "clr";
 
 export type Product = {
+  id: ProductId;
+  /** Markenname, wird nicht übersetzt */
   name: string;
   icon: string;
-  platform: string;
-  description: string;
-  action: ProductAction;
-  status: ProductStatus;
+  action: { kind: "primary" | "outline"; href: string } | { kind: "disabled" };
+  /** Link führt in den Play Store; auf nicht-deutschen Seiten kommt &hl=<Sprache> dazu */
+  playStore?: boolean;
+  tone: "success" | "amber" | "warning" | "danger";
 };
 
 export const products: Product[] = [
   {
+    id: "serva",
     name: "Serva",
     icon: "/brand/icon-serva.svg",
-    platform: "Web · für Gemeinden",
-    description:
-      "Plant Gottesdienste, Predigtdienste und Chorlieder und erinnert Prediger per E-Mail, WhatsApp oder Push an ihren Termin.",
-    action: {
-      kind: "primary",
-      label: "Serva öffnen",
-      href: "https://serva.jw29435.de",
-    },
-    status: { label: "Im Einsatz", tone: "success" },
+    action: { kind: "primary", href: "https://serva.jw29435.de" },
+    tone: "success",
   },
   {
+    id: "nuvo",
     name: "Nuvo Explorer",
     icon: "/brand/icon-nuvo.png",
-    platform: "Android · iOS geplant",
-    description:
-      "Dateien auf der eigenen Synology durchsuchen und Musikordner direkt abspielen, im LAN, per VPN oder über HTTPS.",
     action: {
       kind: "outline",
-      label: "Zum Play-Test",
       href: "https://play.google.com/apps/testing/de.jw29435.nuvo_explorer",
     },
-    status: { label: "Alpha", tone: "amber" },
+    tone: "amber",
   },
   {
+    id: "clr",
     name: "CLR by NMBRS",
     icon: "/brand/icon-clr.png",
-    platform: "Android",
-    description:
-      "Macht aus einem Foto eine Malen-nach-Zahlen-Vorlage, auf Wunsch nur mit den Farben, die in deinem Tuschkasten stecken.",
     action: {
       kind: "primary",
-      label: "Im Play Store",
       href: "https://play.google.com/store/apps/details?id=de.jw29435.clr_by_nmbrs.clr_by_nmbrs",
     },
-    status: { label: "Verfügbar", tone: "success" },
+    playStore: true,
+    tone: "success",
   },
 ];
