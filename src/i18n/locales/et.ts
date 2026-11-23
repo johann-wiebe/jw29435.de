@@ -17,7 +17,7 @@ const et: Messages = {
       description:
         "Saitide jw29435.de ja johannwiebe.de privaatsuspoliitika: serverilogid ja Google Analytics ainult nõusolekul.",
     },
-    ogImageAlt: "jw29435 logo: sülearvuti tähtedega JW merevaigukollasel taustal",
+    ogImageAlt: "jw29435 logo: sülearvuti tähtedega JW",
   },
 
   layout: {

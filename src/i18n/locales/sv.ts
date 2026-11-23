@@ -17,7 +17,7 @@ const sv: Messages = {
       description:
         "Integritetspolicy för jw29435.de och johannwiebe.de: serverloggar och Google Analytics bara med samtycke.",
     },
-    ogImageAlt: "jw29435-logotyp: bärbar dator med bokstäverna JW på bärnsten",
+    ogImageAlt: "jw29435-logotyp: bärbar dator med bokstäverna JW",
   },
 
   layout: {

@@ -17,7 +17,7 @@ const ca: Messages = {
       description:
         "Política de privadesa de jw29435.de i johannwiebe.de: registres del servidor i Google Analytics només amb consentiment.",
     },
-    ogImageAlt: "Logotip de jw29435: portàtil amb les lletres JW sobre fons ambre",
+    ogImageAlt: "Logotip de jw29435: portàtil amb les lletres JW",
   },
 
   layout: {

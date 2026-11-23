@@ -17,7 +17,7 @@ const tr: Messages = {
       description:
         "jw29435.de ve johannwiebe.de için gizlilik politikası: sunucu günlükleri ve yalnızca onayla Google Analytics.",
     },
-    ogImageAlt: "jw29435 logosu: kehribar renkli zemin üzerinde JW harfli dizüstü bilgisayar",
+    ogImageAlt: "jw29435 logosu: JW harfli dizüstü bilgisayar",
   },
 
   layout: {

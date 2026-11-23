@@ -12,7 +12,7 @@ export type Product = {
   action: { kind: "primary" | "outline"; href: string } | { kind: "disabled" };
   /** Link führt in den Play Store; auf nicht-deutschen Seiten kommt &hl=<Sprache> dazu */
   playStore?: boolean;
-  tone: "success" | "amber" | "warning" | "danger";
+  tone: "success" | "accent" | "warning" | "danger";
 };
 
 export const products: Product[] = [
@@ -31,7 +31,7 @@ export const products: Product[] = [
       kind: "outline",
       href: "https://play.google.com/apps/testing/de.jw29435.nuvo_explorer",
     },
-    tone: "amber",
+    tone: "accent",
   },
   {
     id: "clr",

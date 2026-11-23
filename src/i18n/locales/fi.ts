@@ -17,7 +17,7 @@ const fi: Messages = {
       description:
         "Sivustojen jw29435.de ja johannwiebe.de tietosuojaseloste: palvelinlokit ja Google Analytics vain suostumuksella.",
     },
-    ogImageAlt: "jw29435-logo: kannettava tietokone, jossa kirjaimet JW meripihkan värisellä pohjalla",
+    ogImageAlt: "jw29435-logo: kannettava tietokone, jossa kirjaimet JW",
   },
 
   layout: {

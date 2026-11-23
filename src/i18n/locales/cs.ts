@@ -17,7 +17,7 @@ const cs: Messages = {
       description:
         "Zásady ochrany osobních údajů pro jw29435.de a johannwiebe.de: serverové logy a Google Analytics jen se souhlasem.",
     },
-    ogImageAlt: "Logo jw29435: notebook s písmeny JW na jantarovém pozadí",
+    ogImageAlt: "Logo jw29435: notebook s písmeny JW",
   },
 
   layout: {

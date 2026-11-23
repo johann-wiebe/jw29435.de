@@ -17,7 +17,7 @@ const es: Messages = {
       description:
         "Política de privacidad de jw29435.de y johannwiebe.de: registros del servidor y Google Analytics solo con consentimiento.",
     },
-    ogImageAlt: "Logotipo de jw29435: portátil con las letras JW sobre fondo ámbar",
+    ogImageAlt: "Logotipo de jw29435: portátil con las letras JW",
   },
 
   layout: {

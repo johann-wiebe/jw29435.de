@@ -17,7 +17,7 @@ const is: Messages = {
       description:
         "Persónuverndarstefna fyrir jw29435.de og johannwiebe.de: atvikaskrár netþjóns og Google Analytics aðeins með samþykki.",
     },
-    ogImageAlt: "Merki jw29435: fartölva með stöfunum JW á rafgulum grunni",
+    ogImageAlt: "Merki jw29435: fartölva með stöfunum JW",
   },
 
   layout: {

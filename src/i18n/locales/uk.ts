@@ -17,7 +17,7 @@ const uk: Messages = {
       description:
         "Політика конфіденційності jw29435.de і johannwiebe.de: журнали сервера, а Google Analytics — лише за згодою.",
     },
-    ogImageAlt: "Логотип jw29435: ноутбук із літерами JW на бурштиновому тлі",
+    ogImageAlt: "Логотип jw29435: ноутбук із літерами JW",
   },
 
   layout: {

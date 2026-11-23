@@ -17,7 +17,7 @@ const hu: Messages = {
       description:
         "A jw29435.de és a johannwiebe.de adatvédelmi tájékoztatója: szervernaplók, Google Analytics csak hozzájárulással.",
     },
-    ogImageAlt: "jw29435 logó: laptop JW betűkkel borostyánsárga alapon",
+    ogImageAlt: "jw29435 logó: laptop JW betűkkel",
   },
 
   layout: {
