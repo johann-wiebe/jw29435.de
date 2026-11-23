@@ -17,7 +17,7 @@ const fr: Messages = {
       description:
         "Politique de confidentialité de jw29435.de et johannwiebe.de : journaux serveur, et Google Analytics uniquement avec consentement.",
     },
-    ogImageAlt: "Logo jw29435 : ordinateur portable avec les lettres JW sur fond ambre",
+    ogImageAlt: "Logo jw29435 : ordinateur portable avec les lettres JW",
   },
 
   layout: {

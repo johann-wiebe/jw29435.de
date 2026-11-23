@@ -17,7 +17,7 @@ const ru: Messages = {
       description:
         "Политика конфиденциальности jw29435.de и johannwiebe.de: журналы сервера, а Google Analytics — только с согласия.",
     },
-    ogImageAlt: "Логотип jw29435: ноутбук с буквами JW на янтарном фоне",
+    ogImageAlt: "Логотип jw29435: ноутбук с буквами JW",
   },
 
   layout: {

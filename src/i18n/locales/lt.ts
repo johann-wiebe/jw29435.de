@@ -17,7 +17,7 @@ const lt: Messages = {
       description:
         "Svetainių jw29435.de ir johannwiebe.de privatumo politika: serverio žurnalai, o Google Analytics – tik gavus sutikimą.",
     },
-    ogImageAlt: "jw29435 logotipas: nešiojamasis kompiuteris su raidėmis JW gintariniame fone",
+    ogImageAlt: "jw29435 logotipas: nešiojamasis kompiuteris su raidėmis JW",
   },
 
   layout: {

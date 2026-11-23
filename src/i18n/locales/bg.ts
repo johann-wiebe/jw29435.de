@@ -17,7 +17,7 @@ const bg: Messages = {
       description:
         "Политика за поверителност за jw29435.de и johannwiebe.de: сървърни логове, а Google Analytics само със съгласие.",
     },
-    ogImageAlt: "Лого на jw29435: лаптоп с буквите JW на кехлибарен фон",
+    ogImageAlt: "Лого на jw29435: лаптоп с буквите JW",
   },
 
   layout: {

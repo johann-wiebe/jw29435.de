@@ -22,7 +22,7 @@ const de = {
       description:
         "Datenschutzerklärung für jw29435.de und johannwiebe.de: Server-Logs und Google Analytics nur mit Einwilligung.",
     },
-    ogImageAlt: "jw29435-Logo: Laptop mit den Buchstaben JW auf Amber",
+    ogImageAlt: "jw29435-Logo: Laptop mit den Buchstaben JW",
   },
 
   layout: {

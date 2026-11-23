@@ -17,7 +17,7 @@ const ro: Messages = {
       description:
         "Politica de confidențialitate pentru jw29435.de și johannwiebe.de: jurnale de server și Google Analytics doar cu consimțământ.",
     },
-    ogImageAlt: "Logo jw29435: laptop cu literele JW pe fond chihlimbar",
+    ogImageAlt: "Logo jw29435: laptop cu literele JW",
   },
 
   layout: {

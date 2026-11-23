@@ -17,7 +17,7 @@ const nl: Messages = {
       description:
         "Privacyverklaring voor jw29435.de en johannwiebe.de: serverlogs en Google Analytics alleen met toestemming.",
     },
-    ogImageAlt: "jw29435-logo: laptop met de letters JW op amber",
+    ogImageAlt: "jw29435-logo: laptop met de letters JW",
   },
 
   layout: {

@@ -17,7 +17,7 @@ const ga: Messages = {
       description:
         "Polasaí príobháideachais do jw29435.de agus johannwiebe.de: logaí freastalaí, agus Google Analytics le toiliú amháin.",
     },
-    ogImageAlt: "Lógó jw29435: ríomhaire glúine leis na litreacha JW ar ómra",
+    ogImageAlt: "Lógó jw29435: ríomhaire glúine leis na litreacha JW",
   },
 
   layout: {

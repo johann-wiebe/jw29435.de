@@ -17,7 +17,7 @@ const sq: Messages = {
       description:
         "Politika e privatësisë për jw29435.de dhe johannwiebe.de: regjistrat e serverit dhe Google Analytics vetëm me pëlqim.",
     },
-    ogImageAlt: "Logoja jw29435: laptop me shkronjat JW mbi sfond qelibar",
+    ogImageAlt: "Logoja jw29435: laptop me shkronjat JW",
   },
 
   layout: {

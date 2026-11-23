@@ -17,7 +17,7 @@ const nb: Messages = {
       description:
         "Personvernerklæring for jw29435.de og johannwiebe.de: serverlogger og Google Analytics bare med samtykke.",
     },
-    ogImageAlt: "jw29435-logo: bærbar PC med bokstavene JW på rav",
+    ogImageAlt: "jw29435-logo: bærbar PC med bokstavene JW",
   },
 
   layout: {

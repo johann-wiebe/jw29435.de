@@ -17,7 +17,7 @@ const da: Messages = {
       description:
         "Privatlivspolitik for jw29435.de og johannwiebe.de: serverlogs og Google Analytics kun med samtykke.",
     },
-    ogImageAlt: "jw29435-logo: bærbar computer med bogstaverne JW på rav",
+    ogImageAlt: "jw29435-logo: bærbar computer med bogstaverne JW",
   },
 
   layout: {

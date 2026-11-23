@@ -17,7 +17,7 @@ const el: Messages = {
       description:
         "Πολιτική απορρήτου των jw29435.de και johannwiebe.de: αρχεία καταγραφής και Google Analytics μόνο με συγκατάθεση.",
     },
-    ogImageAlt: "Λογότυπο jw29435: φορητός υπολογιστής με τα γράμματα JW σε κεχριμπαρένιο φόντο",
+    ogImageAlt: "Λογότυπο jw29435: φορητός υπολογιστής με τα γράμματα JW",
   },
 
   layout: {

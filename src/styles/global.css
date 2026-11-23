@@ -251,7 +251,7 @@ main:focus {
   content: "✓";
   margin-left: auto;
   padding-left: 12px;
-  color: var(--amber-text);
+  color: var(--accent-text);
 }
 
 /* Hinweis auf eine Fassung in der Browsersprache (nur deutsche Seiten) */
@@ -275,7 +275,7 @@ main:focus {
 }
 
 .lang-hint__text a {
-  color: var(--amber-text);
+  color: var(--accent-text);
   font-weight: 600;
   text-underline-offset: 3px;
 }
@@ -445,12 +445,12 @@ main:focus {
 }
 
 .button--primary {
-  background: var(--amber);
-  color: var(--on-amber);
+  background: var(--accent);
+  color: var(--on-accent);
 }
 
 .button--primary:hover {
-  background: color-mix(in srgb, var(--amber), #000 8%);
+  background: color-mix(in srgb, var(--accent) 92%, #fff);
 }
 
 .button--outline {
@@ -490,8 +490,8 @@ main:focus {
   background: var(--success);
 }
 
-.status__dot--amber {
-  background: var(--amber);
+.status__dot--accent {
+  background: var(--accent);
 }
 
 .status__dot--warning {
@@ -597,7 +597,7 @@ main:focus {
 }
 
 .prose p a:not(.button) {
-  color: var(--amber-text);
+  color: var(--accent-text);
   font-weight: 600;
   text-underline-offset: 3px;
   overflow-wrap: anywhere;
@@ -743,7 +743,7 @@ main:focus {
 }
 
 .consent__text a {
-  color: var(--amber-text);
+  color: var(--accent-text);
   font-weight: 600;
   text-underline-offset: 3px;
 }

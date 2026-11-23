@@ -17,7 +17,7 @@ const sl: Messages = {
       description:
         "Pravilnik o zasebnosti za jw29435.de in johannwiebe.de: dnevniki strežnika, Google Analytics pa samo s privolitvijo.",
     },
-    ogImageAlt: "Logotip jw29435: prenosnik s črkama JW na jantarnem ozadju",
+    ogImageAlt: "Logotip jw29435: prenosnik s črkama JW",
   },
 
   layout: {

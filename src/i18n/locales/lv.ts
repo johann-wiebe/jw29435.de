@@ -17,7 +17,7 @@ const lv: Messages = {
       description:
         "Vietņu jw29435.de un johannwiebe.de privātuma politika: servera žurnāli, bet Google Analytics tikai ar piekrišanu.",
     },
-    ogImageAlt: "jw29435 logotips: klēpjdators ar burtiem JW uz dzintara krāsas fona",
+    ogImageAlt: "jw29435 logotips: klēpjdators ar burtiem JW",
   },
 
   layout: {

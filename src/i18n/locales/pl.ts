@@ -17,7 +17,7 @@ const pl: Messages = {
       description:
         "Polityka prywatności jw29435.de i johannwiebe.de: logi serwera, a Google Analytics tylko za zgodą.",
     },
-    ogImageAlt: "Logo jw29435: laptop z literami JW na bursztynowym tle",
+    ogImageAlt: "Logo jw29435: laptop z literami JW",
   },
 
   layout: {
